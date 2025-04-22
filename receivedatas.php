@@ -1,7 +1,12 @@
 <?php
-$qry=$_POST['qr'];
-$rmode=$_POST['rmode'];
-$tblnm=$_POST['tblnm'];
+$qry = "";
+$rmode="";
+$tblnm="";
+if(isset($_POST['qr']) && isset($_POST['rmode']) && isset($_POST['tblnm'])){
+	$qry=$_POST['qr'];
+	$rmode=$_POST['rmode'];
+	$tblnm=$_POST['tblnm'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
